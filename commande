@@ -1,0 +1,34 @@
+## Doctolib :
+
+$ rails generate model Doctor first_name:string last_name:string specialty:string postal_code:integer
+$ rails generate model Patient first_name:string last_name:string
+$ rails generate model Appointment date:datetime
+
+## Usine :
+
+$ rails generate model Assembly name:string
+$ rails generate model Part part_number:string
+$ rails g migration CreateJoinTableAssemblyPart assembly part
+
+## Airbnb : 
+$ rails generate model Dogsitter first_name:string last_name:string
+$ rails generate model Dog name:string 
+$ rails generate model Stroll location:string
+
+## Cours
+$ rails generate model Student first_name:string last_name:string
+$ rails generate model Cour name:string
+$ rails g migration CreateJoinTableStudentCours student cour
+
+## Youtube
+$ rails generate model Video title:string lenght:string
+$ rails generate model User first_name:string last_name:string
+$ rails generate model Category name:string
+$ rails g migration CreateJoinTableCategoryUser category user
+
+## Pimp my Doctor
+$ rails generate model City location:string
+$ rails generate model Specialty name:string
+$ rails g migration CreateJoinTableDoctorSpecialty doctor specialty
+
+
